@@ -1,0 +1,169 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family:: 'NHaasGroteskDSPro'; */
+
+}
+/*
+@font-face {
+    font-family: 'NHaasGroteskDSPro';
+    src: url('fonts/NHaasGroteskDSPro-55Rg.ttf') format('truetype');
+} */
+
+#txtview{
+  margin: auto;
+  padding: 5px;
+  width: 10%;
+  text-align: center;
+}
+
+#txtview:hover  {
+  font-style: italic;
+  margin: auto;
+  padding: 5px;
+  width: 10%;
+}
+
+.menu-right {
+}
+
+/* .grid-pane {
+  float:left;
+  margin: auto;
+  text-align: center;
+} */
+
+a {
+  /* font-family: 'NHaasGroteskDSPro'; */
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+    /* font-family: 'NHaasGroteskDSPro'; */
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* .grid-pane2 {
+  float: left;
+  text-align: left;
+  margin: auto;
+  padding: 5px;
+  width: 100%;
+} */
+
+.right-pane > div.item { clear:right }
+}
+
+.right-pane {
+  width: 100%;
+}
+
+.title {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.item {
+  width: 700px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  height: 100%;
+  line-height: 1.25em;
+  position: relative;
+}
+
+.item:hover {
+  background-color: yellow;
+}
+
+.item span.image {
+  display: block;
+  position: relative;
+  margin: 0 0.25em;
+  max-height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.item span.image:after {
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  transform: scale(1.5, 1.5);
+  content: '';
+   z-index: -1;
+}
+
+.item span.image.landscape {
+	width: calc(4em / 3);
+  height: 1em;
+}
+
+.item span.image.portrait {
+	width: .75em;
+  height: 1em;
+}
+
+.item img {
+  width: auto;
+  max-height: 100%;
+  transform: scale(1.5,1.5);
+	/* width: auto;
+  height: auto;
+  max-height: 1em;
+  vertical-align: middle;
+  transform: scale(1.5,1.5); */
+}
+
+.item img.selected {
+  position: fixed;
+  top: 50vh; left: 50vw;
+  max-height: 100vh;
+  max-width: 700px;
+  transform: translate(-50%,-50%);
+  z-index: +1;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9991;
+  display: none;
+  width: 100%;
+  padding: 7px 10px;
+  color: #fff;
+  background: #000
+}
+
+.content:active {
+  display: block;
+}
+
+/* .link.selected {
+  text-decoration: underline;
+  background-color: hotpink;
+}
+
+.link:hover {
+    background-color: hotpink;
+} */
+
+.text {
+  padding: 15px;
+  margin-left: 15px;
+  text-align: center;
+font-size: 12px;
+}
